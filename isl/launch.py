@@ -189,7 +189,7 @@ flags.DEFINE_bool(
 
 flags.DEFINE_integer('num_z_values', 26,
                      'Number of z depths to use from input.')
-
+#can num z be 75
 FLAGS = flags.FLAGS
 
 
@@ -207,7 +207,7 @@ INPUT_CHANNEL_VALUES = [
     'PHASE_CONTRAST',
     'DIC',
 ]
-TARGET_Z_VALUES = ['MAXPROJECT']
+TARGET_Z_VALUES = get_z_values()#['MAXPROJECT']#zmienic na 
 TARGET_CHANNEL_VALUES = [
     'DAPI_CONFOCAL',
     'DAPI_WIDEFIELD',
@@ -290,6 +290,7 @@ def data_parameters() -> data_provider.DataParameters:
         crop_size)
 
   z_values = get_z_values()
+  TARGET_Z_VALUES = get_z_values()
   return data_provider.DataParameters(io_parameters, z_values,
                                       INPUT_CHANNEL_VALUES, TARGET_Z_VALUES,
                                       TARGET_CHANNEL_VALUES)
