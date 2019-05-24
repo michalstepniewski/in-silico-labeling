@@ -209,7 +209,8 @@ INPUT_CHANNEL_VALUES = [
 ]
 TARGET_Z_VALUES = get_z_values()#['MAXPROJECT']#zmienic na 
 TARGET_CHANNEL_VALUES = [
-    'DAPI_CONFOCAL',
+    'DAPI_CONFlOCAL']#,
+'''
     'DAPI_WIDEFIELD',
     'CELLMASK_CONFOCAL',
     'TUJ1_WIDEFIELD',
@@ -218,6 +219,7 @@ TARGET_CHANNEL_VALUES = [
     'ISLET_WIDEFIELD',
     'DEAD_CONFOCAL',
 ]
+'''
 
 # The size of the extracted input patches.
 CONCORDANCE_EXTRACT_PATCH_SIZE = 250
