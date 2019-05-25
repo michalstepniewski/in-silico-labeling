@@ -277,7 +277,7 @@ def infer(
       import pickle
       f = open('resinfer.pk',wb)
       pickle.dump()
-      d = {'input_lt':stitched_input, 'predict_input_lt':stitched_predict_input
+      d = {'input_lt':stitched_input, 'predict_input_lt':stitched_predict_input,
            'target_lt':stitched_target,'predict_target_lt':stitched_predict_target}
       pickle.dump(d,f)
       [input_error_panel, target_error_panel, global_step] = sess.run(
