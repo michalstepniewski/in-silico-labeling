@@ -274,6 +274,12 @@ def infer(
       stitched_predict_target = np.concatenate(predict_target_rows, axis=1)
 
       logging.info('Creating error panels')
+      import pickle
+      f = open('resinfer.pk',wb)
+      pickle.dump()
+      d = {'input_lt':stitched_input, 'predict_input_lt':stitched_predict_input
+           'target_lt':stitched_target,'predict_target_lt':stitched_predict_target}
+      pickle.dump(d,f)
       [input_error_panel, target_error_panel, global_step] = sess.run(
           [
               input_error_panel_lt, target_error_panel_lt,
