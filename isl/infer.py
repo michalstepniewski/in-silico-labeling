@@ -182,7 +182,7 @@ def infer(
             'column',
             ('z', gitapp.dp.target_z_values),
             ('channel', gitapp.dp.target_channel_values),# + ['NEURITE_CONFOCAL']),
-            ('mask', [False, True]),
+            ('mask', [False]),#, True]),
         ])
     predict_target_lt = lt.LabeledTensor(
         tf.placeholder(
