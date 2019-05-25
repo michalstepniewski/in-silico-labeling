@@ -174,7 +174,8 @@ def infer(
             shape=[
                 1, num_output_rows, num_output_columns,
                 len(gitapp.dp.target_z_values),
-                len(gitapp.dp.target_channel_values) + 1, 2
+                len(gitapp.dp.target_channel_values),# + 1,
+                2
             ]),
         axes=[
             'batch',
