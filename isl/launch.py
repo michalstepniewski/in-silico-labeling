@@ -203,10 +203,13 @@ def get_z_values() -> List[float]:
 
 
 INPUT_CHANNEL_VALUES = [
-    'BRIGHTFIELD',
+    'BRIGHTFIELD']
+'''
+,
     'PHASE_CONTRAST',
     'DIC',
 ]
+'''
 TARGET_Z_VALUES = get_z_values()#['MAXPROJECT']#zmienic na 
 TARGET_CHANNEL_VALUES = [
     'DAPI_CONFOCAL']#,
