@@ -275,7 +275,7 @@ def infer(
 
       logging.info('Creating error panels')
       import pickle
-      f = open('resinfer.pk','wb')
+      f = open('/home/ubuntu/resinfer.pk','wb')
       #pickle.dump()
       d = {'input_lt':stitched_input, 'predict_input_lt':stitched_predict_input,
            'target_lt':stitched_target,'predict_target_lt':stitched_predict_target}
